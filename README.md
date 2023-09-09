@@ -1,2 +1,5 @@
 # debian-setup
-a script to debloat and configure my debian installs
+either download script or use this one-line script
+```bash
+bash <(curl -s https://raw.githubusercontent.com/77zip/debian-setup/main/gnome-setup.sh)
+```
