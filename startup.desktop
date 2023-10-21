@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=xrandr --output HDMI-1 --panning 1280x720 --transform 1.05,0,-30,0,01.05,-20,0,0,1
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=myscript
+Comment=custom script
