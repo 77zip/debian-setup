@@ -1,0 +1,16 @@
+#!/bin/bash
+ln -s /usr/bin/bash /usr/bin/sh
+ln -s /run/dbus/ /var/run/dbus
+systemd-machine-id-setup
+systemctl preset-all
+systemctl disable systemd-time-wait-sync.service
+KVER=$(bulge list | grep -e "^linux " | grep -oP "[\d\.]+-")
+dracut --kver ${KVER}yiffOS --force
+grub-mkconfig -o /boot/grub/grub.cfg
+pwconv
+grpconv
+touch cock
+touch grass
+passwd root
+chmod +x /usr/bin/ping
+echo "yiffos installed (:"
